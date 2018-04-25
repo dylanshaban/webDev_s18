@@ -8,6 +8,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+
     <title>Otto's Tacos</title>
 
     <!-- Bootstrap core CSS -->
@@ -151,6 +153,59 @@
         <font face="lazing on a sunny afternoon" size="6" color="#EF502C">place an order</font>
       </button>
     </header>
+
+    <div
+        class="modal fade"
+        id="basicModal"
+        tab-index="-1"
+        role="dialog"
+        aria-labeledby="myModalLabel"
+      >
+        <!-- modal positioning and modal content -->
+        <div class="modal-dialog modal-lg" role="document">
+          <!-- modal content -->
+            <div class="modal-content">
+              <!-- header with a title and a close icon button -->
+              <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">
+                  Order Summary
+                </h4>
+                <button
+                  type="button"
+                  class="close"
+                  data-dismiss="modal"
+                  aria-label="close"
+                >
+                X
+                </button>
+              </div>
+              <!-- main content or body -->
+              <div class="modal-body">
+                  <p>
+                    Carne Asada Taco x 100
+                    <br>
+                    Chicken Taco x 5
+                    <br>
+                    Chips and Salsa (Red) x 2
+                    <br>
+                    Big Side of Guac (Catering) x 1
+                    <br>
+                    <br>
+                    <br>
+
+                    Subtotal  $1 billion
+
+
+                  </p>
+              </div>
+              <!-- modal footer -->
+              <div class="modal-footer">
+                  <button class="btn btn-danger" data-dismiss="modal">Close</button>
+                  <button class="btn btn-success">Save</button>
+              </div>
+            </div>
+        </div>
+      </div>
 
     
     <section id="about">
