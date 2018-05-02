@@ -25,3 +25,30 @@ body {
 }
 
 
+.menu-item{
+	position:relative;margin-bottom:10px
+}
+
+.menu-item-name{
+	line-height:1.2;padding-right:48px
+}
+
+.menu-item-name strong{
+	font-weight:800
+}
+
+.menu-item-description{
+	font-style:italic;font-size:.8em;line-height:1.2;color:#5a5a5a
+}
+
+.menu-item-price{
+	font-weight:800;line-height:1.2;position:absolute;top:0;right:0
+}
+
+
+
+
+
+
+
+
