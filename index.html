@@ -8,6 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
     
 
 
@@ -20,9 +21,11 @@
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <style type="text/css">
       body {
-              height: 1000px;
-              background-image: url("OZ8A3208.jpg"), url(ottos_logov1.png);
-              background-color: linear-gradient(white, #EF502C);
+              
+              
+              background-image: linear-gradient(white, #EF502C) !important;
+              font-family: 'Fredoka One', cursive;
+
               
 
         }
@@ -35,15 +38,22 @@
         }
 
       .btn-danger {
-              color: #fff;
-              background-color: #dc8235;
-              border-color: #007bff;
-              border-width: 5px;
+              color: white;
+              background-color: red;
+              
+              
         }
       .btn-danger:hover {
               background-color: yellow;
               border-color: purple;
         }
+
+      .btn-success:hover {
+              background-color: blue;
+              border-color: ;
+      }
+
+
       .center-block {
               display: block;
               margin-left: auto;
@@ -60,9 +70,43 @@
               margin-right: auto;
               z-index: 1;
 
+
+
       }
 
+      .hamburger-line, .menu-text {
+              background-color: #EF502C !important; 
+              color: #EF502C !important;
+      }
 
+      .flex-container {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        
+        -webkit-flex-flow: row wrap;
+        justify-content: space-around;
+      }
+
+      .flex-item {
+        /*background: tomato;
+        padding: 5px;
+        width: 200px;
+        height: 150px;
+        margin-top: 10px;
+        
+        line-height: 150px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;*/
+        text-align: center;
+      }
 
       .fa {
               padding: auto;
@@ -108,6 +152,93 @@
 
       }
 
+      .center {
+
+      }
+
+            * {
+        box-sizing: border-box;
+      }
+
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+      }
+
+      .col-25 {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+      }
+
+      .col-50 {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+      }
+
+      .col-75 {
+        -ms-flex: 75%; /* IE10 */
+        flex: 75%;
+      }
+
+      .col-25,
+      .col-50,
+      .col-75 {
+        padding: 0 16px;
+      }
+
+      
+
+      input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+
+      
+
+      .btn:hover {
+        background-color: #45a049;
+      }
+
+      a {
+        color: #2196F3;
+      }
+
+      hr {
+        border: 1px solid lightgrey;
+      }
+
+      span.price {
+        float: right;
+        color: grey;
+      }
+
+      #grad1 {
+          height: 200px;
+          background: red; /* For browsers that do not support gradients */
+          background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /* Standard syntax (must be last) */
+      }
+
+
+
+
+
       .ottos-menu{font-size:18px;font-size:1.125rem}
       .ottos-menu-board{overflow:visible;text-align:left;margin:0 -24px;font-size:0}
       .menu-container{display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-flow:wrap;flex-flow:wrap;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start}
@@ -126,6 +257,8 @@
           
           #ottos-locations{position:relative;border-color:#f7e9c4;border-style:none}#ottos-locations a{opacity:1;transition:opacity .25s linear;text-decoration:none}#ottos-locations .section-header{color:#fff}#ottos-locations a:hover{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";filter:alpha(opacity=50);opacity:.5}#locations-title{padding:10px 20px;font-size:32px;font-size:2rem;text-transform:uppercase;border-bottom:1px solid #cfcfcf;color:#f04e23}#location-dropdown{display:none}#locations-select{position:absolute;left:0;top:0;width:25%;height:100%;background:#fff;background:hsla(0,0%,100%,.8);background:#f4f4f4;background:hsla(0,0%,96%,.8);box-shadow:8px 0 5px -5px rgba(0,0,0,.35);overflow-y:scroll;-ms-overflow-style:none;z-index:12;-webkit-transform:translate(0);transform:translate(0);transition:-webkit-transform .25s linear;transition:transform .25s linear;transition:transform .25s linear,-webkit-transform .25s linear}#locations-select li{padding:10px 20px 10px 16px;background:#fff;color:#000;font-size:18px;line-height:0;text-align:left;cursor:pointer;border-left:4px solid transparent;position:relative;transition:border-color .25s linear}#locations-select li:before{content:"";width:10px;height:10px;position:absolute;font-size:0;line-height:0;display:block;right:10px;top:50%;margin-top:-5px;z-index:21;border-radius:50%;background:#f04e23;background:#000;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);opacity:0;transition:opacity .25s linear}#locations-select li.active:before,#locations-select li.active:hover:before{background:#f04e23}#locations-select li.active:before,#locations-select li.active:hover:before,#locations-select li:hover:before{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);opacity:1}#locations-select li:after{position:absolute;bottom:0;left:-4px;right:0;display:block;content:"";height:1px;border-bottom:1px solid #cfcfcf}#locations-select li:hover{border-left-color:#000}#locations-select li.active,#locations-select li.active:hover{border-left-color:#f04e23}#locations-select li h3{font-size:18px}#locations-select li span{display:block;font-size:14px;line-height:1.33333;color:#9a9a9a;font-family:Open Sans,helvetica,sans-serif}#locations-info{position:absolute;top:0;left:25%;height:100%;width:25%;background:#fff;background:hsla(0,0%,100%,.8);background:#f04e23;background:rgba(223,69,8,.8);background:rgba(255,85,0,.9);box-shadow:8px 0 5px -5px rgba(0,0,0,.15);z-index:11;overflow-y:scroll;-ms-overflow-style:none;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);opacity:0;-webkit-transform:translateX(-100%);transform:translateX(-100%);transition:opacity .25s linear,-webkit-transform .25s linear;transition:transform .25s linear,opacity .25s linear;transition:transform .25s linear,opacity .25s linear,-webkit-transform .25s linear}.ie8 #locations-info{left:0}.ie9 #locations-info{margin-left:-25px}#location-close{position:absolute;top:5px;right:5px;color:#fff;cursor:pointer;font-size:24px;height:30px;width:30px;line-height:30px;text-align:center;z-index:12}.ie8 #locations-info.active{left:25%}#locations-info.active{-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);opacity:1;-webkit-transform:translateX(0);transform:translateX(0)}#locations-info>ul>li{position:absolute;top:0;left:0;width:100%;padding:20px;font-size:15px;line-height:1.4;color:#000;color:#fff;text-shadow:0 -1px 1px rgba(0,0,0,.35);text-align:left;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";filter:alpha(opacity=0);opacity:0;z-index:0;transition:opacity .25s linear}#locations-info>ul>li.active{z-index:11;-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";filter:alpha(opacity=100);opacity:1;transition:opacity .25s linear}#locations-info h3{font-size:24px;margin-bottom:5px;border-bottom:1px solid;padding-bottom:5px}#locations-info h5{font-size:18px;margin:15px 0 10px;border-bottom:1px solid}.location-hours p{margin:0}.location-hours{margin-bottom:10px}.location-delivery li{list-style-type:none}#ottos-locations .location-delivery .ottos-button{margin:0 0 10px;padding:8px 16px;font-size:13px;color:#f50;text-align:center;display:block}#ottos-locations .section-content p{max-width:600px;margin-left:auto;margin-right:auto}.location-tabs{list-style:none;font-size:0;margin:0 auto;text-align:center}.location-tabs li{margin:0;max-width:100%;display:inline-block;font-size:15px;line-height:1.4;width:33.333333%;padding:15px;vertical-align:top;color:#333;text-align:left;position:relative}.location-container h4{color:#fff;margin-bottom:5px;position:relative;font-size:32px;font-size:2rem}.location-container h4:before{content:"";position:absolute;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);background-color:#fff;left:0;width:100%;border-top:4px solid}.location-container h4 span{background-color:#f04e23;padding-right:10px;position:relative}.location-details{position:relative;background:#fff;box-shadow:4px 3px 8px -2px rgba(0,0,0,.25)}.location-content{position:relative;z-index:2;padding:15px;background:linear-gradient(90deg,#fff 25%,#fff);background:linear-gradient(90deg,#fff 25%,hsla(0,0%,100%,0))}.location-content .ottos-button{margin:0;font-size:14px;padding:12px 12px 10px}.ottos-button.delivery-btn{color:#fffbf0}.ottos-button.map-btn:before{content:"\f041";content:"\f278";font-family:FontAwesome;padding-right:5px;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;font-size:.85}.location-section{margin:15px 0}.location-address{margin-top:0;font-weight:700}.location-details a{color:#f04e23}.map-img{left:0;height:100%;width:100%;overflow:hidden;z-index:1}.map-img,.map-img img{position:absolute;top:0}.map-img img{right:0;max-width:300%;width:150%;-webkit-transform:translate(33%,-29%);transform:translate(33%,-29%)}.map-link{padding-left:4px;border-left:1px solid #cfcfcf;margin-left:4px}.map-link,.map-link a{text-decoration:none}.location-email:before,.location-phone:before,.map-link a:before{font-family:FontAwesome;padding-right:3px;font-size:1.1em;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.map-link a:before{content:"\f041"}.location-email:before{content:"\f003"}.location-phone:before{content:"\f095"}@media(max-width:1020px){.location-tabs{padding:0 5px}.location-tabs li{padding:15px 5px}.location-tabs{padding:0 15px}.location-tabs li{width:100%;padding:15px;max-width:500px}.location-container h4:before{border-top-width:3px}}@media(max-width:699px){.location-hours p{font-size:15px}.location-tabs li{display:block;margin-top:8px;width:auto;padding:0;max-width:100%}.location-tabs li:first-child{margin-top:0}.location-container{background:#fff}.location-details{display:none}li .location-details p{font-size:16px}.active .location-details{display:block}.location-container h4:before{font-size:24px;left:15px;color:#fa4b05;background:transparent;content:"\f041";-webkit-transform:translateY(-50%);transform:translateY(-50%);border:0;width:auto}.location-container h4:after,.location-container h4:before{position:absolute;top:50%;font-family:FontAwesome;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.location-container h4:after{content:"\f107";font-size:32px;right:10px;margin-top:-16px;line-height:1;color:#f04e23}.active .location-container h4:after{content:"\f106"}.location-container h4{padding:10px 50px 0 40px;text-align:left;color:#000;margin:0;border-bottom:1px solid #eaeaea;box-shadow:0 -1px 5px rgba(0,0,0,.15);position:relative;z-index:3}.location-container h4 span{background-color:transparent}#locations-info.active,#locations-select{margin:0}.home-block{-webkit-transform:none;transform:none}.map-img img{width:100%}}@media(max-width:420px){.map-img img{-webkit-transform:translate(33%);transform:translate(33%)}}#map-content{color:#000;text-align:left}#map-content a{color:#f04e23}.map-info-header{font-size:21px;color:#f04e23;color:#000}.map-info-address,.map-info-header{margin-bottom:5px}#map-canvas{position:absolute;top:0;left:0;right:0;bottom:0}#map-canvas img{max-width:none}#contact-info{background:#fff;background:hsla(0,0%,100%,.9);padding:20px;color:#000;width:360px;box-shadow:0 0 8px -6px #000}#contact-info .section-header,#contact-info address,#contact-info p{margin-bottom:10px;font-style:normal}#contact-info a{color:#f04e23}#contact-info .location{font-weight:700}.fb-like{margin-top:10px}#delivery-info{position:relative;float:right;width:50%;box-shadow:-4px 0 5px -4px rgba(0,0,0,.5);bottom:0;background:#fff;background:hsla(0,0%,100%,.85);color:#303030;padding-left:60px;padding-right:60px;min-height:600px;z-index:2}
 
+          #about-team{padding:60px 20px}@media(min-width:1600px){#about-team{padding:80px 30px}}#about-content{position:absolute;top:0;left:0;bottom:0;width:50%;background:url(../images/gorgons-3-web.jpg) no-repeat scroll top #000;background-size:cover}#about-content .section-content{text-shadow:0 0 6px rgba(0,0,0,.75);position:absolute;top:50%;left:0;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);padding:60px 30px;max-width:800px}@media(min-width:1600px){#about-content .section-content{padding:80px 40px}}#about-content:before{background-color:#000;background-color:rgba(0,0,0,.8);position:absolute;top:0;left:0;right:0;bottom:0}@media(max-width:1020px){#about-content .section-content{position:relative;top:auto;left:auto;right:auto;-webkit-transform:none;transform:none;padding:60px 10px}#about-content{position:relative;top:auto;left:auto;bottom:auto;width:50%}#about-team{position:absolute;top:0;right:0;bottom:0;width:50%}#about-team .team{position:absolute;top:50%;left:0;right:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);padding:60px 30px}}@media(max-width:768px){#about-content,#about-team{position:relative;top:auto;left:auto;bottom:auto;width:auto;float:none;padding:0}#about-content .section-content,#about-team .team{position:relative;top:auto;left:auto;right:auto;-webkit-transform:none;transform:none;padding:60px 10px}}.team ul{font-size:0}.team li{display:inline-block;width:49%;padding:0 10px;font-size:16px;font-size:1rem;vertical-align:top}.team-image{display:block;overflow:hidden;line-height:1;margin:0 auto 15px;position:relative;max-width:300px}.team-image-container{border-radius:50%;position:relative;overflow:hidden;padding-bottom:100%}.team-image img{position:absolute;width:100%;height:100%;max-width:100%;max-height:100%;top:0;left:0}.team .question{font-weight:800;margin:12px 0;line-height:1;font-family:DINNextLTPro-Bold,sans-serif}.team .answer{display:block;font-weight:600;font-style:italic;font-family:Open Sans,sans-serif;font-size:.85em;line-height:1.5}.team-food .helper{font-size:.9em;font-weight:400}@media(max-width:699px){#about-content{background-image:url(../images/gorgons-3-mb-web.jpg)}.team li{display:block;width:auto;margin-bottom:30px}}
+
     </style>
 
 
@@ -134,9 +267,9 @@
   <body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-light fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><font face="lazing on a sunny afternoon" size="5" color="#EF502C">Otto's Tacos</font></a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top"><font face="lazing on a sunny afternoon" size="5" color="#EF502C"><img src="logo_sm.png"></font></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -160,6 +293,20 @@
     </nav>
 
 
+        <!-- <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="30604167_444006006039670_4665925622810279936_n.jpg" style="margin:-30% 0; linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1))" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <div class="grad1"><img class="d-block w-100" src="ABC.JPG" style="margin:-30% 0" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="" alt="Third slide">
+        </div>
+      </div>
+    </div> -->
+
 
     <header class="text-white">
 
@@ -173,6 +320,8 @@
        
         <h4><br><br><font face="lazing on a sunny afternoon" size="6" color="#EF502C">SOUTHERN CALIFORNIA INSPIRED TAQUERIA</font></h4>
       </div>
+
+
 
       <form class="container" type="text">
         <label class="my-1 mr-sm-2" for="inlineFormCustomSelectPref"><font face="lazing on a sunny afternoon" size="5" color="#EF502C">Locations</font></label>
@@ -231,41 +380,109 @@
               </div>
               <!-- main content or body -->
               <div class="modal-body">
-                  <p>
-                    Carne Asada Taco x 100
-                    <br>
-                    Chicken Taco x 5
-                    <br>
-                    Chips and Salsa (Red) x 2
-                    <br>
-                    Big Side of Guac (Catering) x 1
-                    <br>
-                    <br>
-                    <br>
+                  
+<h2>Time 2 Pay</h2>
 
-                    Subtotal  $1 billion
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Robert Ross">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="bobbydigital@happylittletrees.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="my mom's house">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="White Plains">
 
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
 
-                  </p>
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:navy;"></i>
+              <i class="fa fa-cc-amex" style="color:blue;"></i>
+              <i class="fa fa-cc-mastercard" style="color:red;"></i>
+              <i class="fa fa-cc-discover" style="color:orange;"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="Bob Allan Ross">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="7?">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="pshhhh">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <label>
+          <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+        </label>
+        <input type="submit" value="Complete Order" class="btn" data-dismiss="modal">
+      </form>
+    </div>
+  </div>
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="#">3x Carne Asada</a> <span class="price">$12</span></p>
+      <p><a href="#">Chips & Guac</a> <span class="price">$6</span></p>
+      <p><a href="#">4x Chips & Salsa</a> <span class="price">$8</span></p>
+      <p><a href="#">Mexican Coke</a> <span class="price">$2</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>$28</b></span></p>
+    </div>
+  </div>
+</div>
               </div>
               <!-- modal footer -->
               <div class="modal-footer">
                   <button class="btn btn-danger" data-dismiss="modal">Close :(</button>
                   <button class="btn btn-success" data-dismiss="modal">Order!</button>
               </div>
+
+
             </div>
         </div>
       </div>
 
+    <center><img src="taco_spec.png"></center>
     
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <h2><center><font face="lazing on a sunny afternoon" size="48" color="#EF502C">Menu</font></center></h2>
+      
             <p class="lead"></p>
             <section id="ottos-menu" class="home-block ottos-menu">
   <div class="site-container">
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <p><center><font face="lazing on a sunny afternoon" size="48" color="#EF502C">Menu</font></center></p>
+
     <div class="ottos-menu-board">
       <div class="menu-container">
         <div class="menu-section menu-tacos">
@@ -417,7 +634,7 @@
 
 
     <section id="services" class="">
-      <div class="container-fluid">
+      <div class="container">
         <div>
             <h2><center><font face="lazing on a sunny afternoon" size="18" color="#EF502C">Our Story</font></center></h2>
             <div class="container-fluid">
@@ -429,27 +646,47 @@
               an LA ex-pat looking for that taste of home, or if you’re just down for some savory tacos, come on in. We’re all about building a community of taco loving 
               employees and guests…. one taco at a time.
             </center></font>
-            <p>
-
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+</div>
+</section>
          
+            <section class="flex-container">
+              <div class="flex-item">
 
-            <center><img src="otto_and_joe.png">
-              <div class="team-content">
-                <h4>Joseph LoNigro</h4>
-                <div class="team-title">Executive Chef</div>
-                <div class="team-food question">Favorite food: <br><span class="helper">(other than tacos)</span> <span class="answer">Ketchup. Yes, It's a food.</span></div>
-                <div class="team-dog question">Dog's name: <span class="answer">MacIntosh "Mac"</span></div>
-              </div></center>
-
-
-              <center>
-              <img src="otto_and_joe copy.png">
-              <h4>Otto Cedeno</h4>
+              <h4>Otto Cedeno</h4>  
+<div style="width: 100%"><img src="otto_and_joe copy.png"></div>
                 <div class="team-title">Founder</div>
                 <div class="team-food question">Favorite food: <br><span  class="helper">(other than tacos)</span> <span class="answer">Fried Chicken</span></div>
-                <div class="team-dog question">Dog's name: <span class="answer">Indiana "Indy" Jones</span></div>
-              </div>
-            </center>
+                <div class="team-dog question">Dog's name: <span class="answer">Indiana "Indy" Jones</span> </div>
+
+              
+
+</div>
+
+        
+                 <div class="flex-item">
+
+
+                <h4>Joseph LoNigro</h4>
+                <div style="width: 100%"><img src="otto_and_joe.png"></div>
+                <div class="team-title">Executive Chef </div>
+                <div class="team-food question">Favorite food: <br><span class="helper">(other than tacos)</span> <span class="answer">Ketchup. Yes, It's a food. </span> </div>
+                <div class="team-dog question">Dog's name: <span class="answer">MacIntosh "Mac"</span> </div>
+              
+              
+</div>
+
+</section>
+
+              
+              
+            
             </div>
           </div>
       </div>
@@ -528,6 +765,13 @@ function myMap() {
 </li>
 </ul>
 
+
+<section>
+  
+
+
+
+</section>
 
     <!-- Footer -->
     
